@@ -1,0 +1,319 @@
+//--------------------------------------------------------------------------------------------------------------------//
+                                            // CSS NOTES \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // TYPOGRAPHY AND TEXT STYLING \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Font Properties */
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+font-weight: bold;
+font-style: italic;
+line-height: 1.5;
+text-align: center;
+text-decoration: underline;
+text-transform: uppercase;
+
+/* Letter Spacing and Word Spacing */
+letter-spacing: 2px;
+word-spacing: 5px;
+
+/* Color and Opacity */
+color: #333;
+opacity: 0.8;
+
+/* Text Shadow */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+/* Overflow and Text Wrapping */
+overflow: hidden;
+white-space: nowrap;
+word-wrap: break-word;
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                            // BOX MODEL AND LAYOUT \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Box Sizing */
+box-sizing: border-box;
+
+/* Width and Height */
+width: 100px;
+height: 150px;
+
+/* Max and Min Width/Height */
+max-width: 500px;
+min-height: 50px;
+
+/* Margin and Padding */
+margin: 10px;
+padding: 20px;
+
+/* Display */
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+
+/* Flex Container */
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+
+/* Grid Container */
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // BACKGROUND AND BORDER STYLING \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Background Color and Image */
+background-color: #f0f0f0;
+background-image: url('background.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+/* Border */
+border: 2px solid #333;
+border-radius: 10px;
+
+/* Box Shadow */
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                            // TRANSITIONS AND ANIMATIONS \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Transitions */
+transition: background-color 0.3s ease;
+
+/* Keyframe Animations */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.element {
+    animation: slideIn 1s ease-in-out;
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // COLOR AND GRADIENTS \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Color */
+color: #3498db;
+
+/* Gradient */
+background: linear-gradient(to right, #3498db, #2ecc71);
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // LIST STYLING \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* List Styles */
+list-style-type: none;
+list-style-image: url('list-icon.png');
+list-style-position: inside;
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // TABLE STYLING \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // FORM STYLING \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Input Styles */
+input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Select Styles */
+select {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // POSITIONING AND Z-INDEX \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Positioning */
+position: relative;
+position: absolute;
+top: 20px;
+left: 20px;
+
+/* Z-Index */
+z-index: 1;
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // RESPONSIVE DESIGN \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px */
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // CSS VARIABLES \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Define Variable */
+:root {
+    --primary-color: #3498db;
+}
+
+/* Use Variable */
+.element {
+    background-color: var(--primary-color);
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // TRANSFORMS AND ANIMATIONS \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Transformations */
+transform: translate(20px, 20px) rotate(45deg) scale(1.5);
+
+/* 2D and 3D Transforms */
+transform: translateX(50px) translateY(50px) rotateZ(45deg) scale(1.2, 0.8);
+
+/* Animations */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.element {
+    animation: rotate 2s infinite linear;
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // FILTERS AND OPACITY \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Filters */
+filter: grayscale(50%) blur(3px) brightness(120%);
+
+/* Opacity */
+opacity: 0.8;
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // FLEXBOX AND GRID LAYOUT \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Flex Container */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+/* Flex Item */
+flex: 1;
+
+/* Grid Container */
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap: 20px;
+
+/* Grid Item */
+grid-column: span 2;
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // RESPONSIVE IMAGES \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Responsive Images */
+.image-container {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS Filter Effects */
+.image-container img {
+    filter: grayscale(50%);
+    transition: filter 0.5s ease;
+}
+
+.image-container img:hover {
+    filter: grayscale(0%);
+}
+
+//--------------------------------------------------------------------------------------------------------------------//
+                                        // CSS BEST PRACTICES \\
+//--------------------------------------------------------------------------------------------------------------------//
+
+/* Avoid !important */
+/* Use Specificity and Cascade Instead */
+
+/* Avoid Universal Selectors */
+/* Use Specific Selectors for Better Performance */
+
+/* Use Shorthand Properties */
+/* Combine Properties for Conciseness */
+
+/* Group Selectors */
+/* Combine Similar Selectors */
+
+/* Minimize Redundant Styles */
+/* Avoid Unnecessary Repetition */
+
+/* Use External Stylesheets */
+/* Separate Structure (HTML), Presentation (CSS), and Behavior (JavaScript) */
+
+/* Validate CSS */
+/* Use Tools Like W3C CSS Validator */
+
+/* Use Vendor Prefixes */
+/* Automate Prefixing with Autoprefixer */
+
+/* Organize Styles */
+/* Use a Consistent and Clear Structure */
+
+/* Commenting */
+/* Provide Descriptive Comments for Complex Styles or Hacks */
+
+//--------------------------------------------------------------------------------------------------------------------//
